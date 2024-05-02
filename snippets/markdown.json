@@ -1,59 +1,59 @@
 {
-    "Links": {
+    "Link": {
         "prefix": ["l", "link"],
-        "body": ["[${1:text}](${2:url}) ${0}"],
+        "body": ["[${1:text}](${2:url}) ${0}"]
     },
-    "URLS": {
+    "URL": {
         "prefix": ["u", "url"],
-        "body": ["<${1}> ${0}"],
+        "body": ["<${1}> ${0}"]
     },
-    "Images": {
+    "Image": {
         "prefix": "img",
-        "body": ["![${1:alt text}](${2:path}) ${0}"],
+        "body": ["![${1:alt text}](${2:path}) ${0}"]
     },
-    "Insert strikethrough": {
+    "Strikethrough text": {
         "prefix": "strikethrough",
-        "body": "~~${1}~~ ${0}",
+        "body": "~~${1}~~ ${0}"
     },
-    "Insert bold text": {
+    "Bold text": {
         "prefix": ["bold", "b"],
-        "body": "**${1}** $0",
+        "body": "**${1}** $0"
     },
-    "Insert italic text": {
+    "Italic text": {
         "prefix": ["i", "italic"],
-        "body": "*${1}* $0",
+        "body": "*${1}* $0"
     },
-    "Insert bold and italic text": {
+    "Bold and italic text": {
         "prefix": ["bold and italic", "bi"],
-        "body": "***${1}*** $0",
+        "body": "***${1}*** $0"
     },
-    "Insert quoted text": {
+    "Quoted text": {
         "prefix": "quote",
-        "body": "> ${1}",
+        "body": "> ${1}"
     },
-    "Insert code": {
+    "Code": {
         "prefix": "code",
-        "body": "`${1}` $0",
+        "body": "`${1}` $0"
     },
-    "Insert code block": {
+    "Code block": {
         "prefix": "codeblock",
-        "body": ["```${1:language}", "$0", "```"],
+        "body": ["```${1:language}", "$0", "```"]
     },
-    "Insert unordered list": {
+    "Unordered list": {
         "prefix": "unordered list",
-        "body": ["- ${1:first}", "- ${2:second}", "- ${3:third}", "$0"],
+        "body": ["- ${1:first}", "- ${2:second}", "- ${3:third}", "$0"]
     },
-    "Insert ordered list": {
+    "Ordered list": {
         "prefix": "ordered list",
-        "body": ["1. ${1:first}", "2. ${2:second}", "3. ${3:third}", "$0"],
+        "body": ["1. ${1:first}", "2. ${2:second}", "3. ${3:third}", "$0"]
     },
-    "Insert horizontal rule": {
+    "Horizontal rule": {
         "prefix": "horizontal rule",
-        "body": "----------\n",
+        "body": "---\n"
     },
     "Task list": {
         "prefix": "task",
-        "body": ["- [${1| ,x|}] ${2:text}", "${0}"],
+        "body": ["- [${1| ,x|}] ${2:text}", "${0}"]
     },
     "Table": {
         "prefix": "table",
@@ -62,38 +62,14 @@
             "| :------- | :-------: | -------: |",
             "| ${4:Item1}    | ${5:Item1}     | ${6:Item1}    |",
             "${0}"
-        ],
+        ]
     },
-    "Insert subscript": {
+    "Subscript": {
         "prefix": "sub",
-        "body": ["${1}<sub>${0}"],
+        "body": ["${1}<sub>${0}"]
     },
-    "Insert superscript": {
+    "Superscript": {
         "prefix": "sup",
-        "body": ["${1}<sup>${0}"],
-    },
-    "Insert generic callout": { 
-        "prefix": "callout",
-        "body": "> [!${1:note}]\n> ",
-    },
-    "Insert Note": {
-        "prefix": ["note", "n"],
-        "body": "> [!NOTE]\n> ",
-    },
-    "Insert Tip": {
-        "prefix": ["tip", "t"],
-        "body": "> [!TIP]\n> ",
-    },
-    "Insert Important": {
-        "prefix": ["important", "imp"],
-        "body": "> [!IMPORTANT]\n> ",
-    },
-    "Insert Warning": {
-        "prefix": ["warning", "w"],
-        "body": "> [!WARNING]\n> ",
-    },
-    "Insert Caution": {
-        "prefix": ["caution", "c"],
-        "body": "> [!CAUTION]\n> ",
+        "body": ["${1}<sup>${0}"]
     }
 }
