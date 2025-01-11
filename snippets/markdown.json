@@ -1,71 +1,123 @@
 {
-    "Link": {
-        "prefix": "link",
-        "body": ["[${1:text}](${2:url}) ${0}"]
-    },
-    "URL": {
-        "prefix": "url",
-        "body": ["<${1}> ${0}"]
-    },
-    "Image": {
-        "prefix": "img",
-        "body": ["![${1:alt text}](${2:path}) ${0}"]
-    },
-    "Strikethrough text": {
-        "prefix": "strikethrough",
-        "body": "~~${1}~~ ${0}"
-    },
-    "Bold text": {
-        "prefix": "bold",
-        "body": "**${1}** $0"
-    },
-    "Italic text": {
-        "prefix": "italic",
-        "body": "*${1}* $0"
-    },
-    "Quoted text": {
-        "prefix": "quote",
-        "body": "> ${1}"
-    },
-    "Code": {
-        "prefix": "code",
-        "body": "`${1}` $0"
-    },
-    "Code block": {
-        "prefix": "codeblock",
-        "body": ["```${1:language}", "$0", "```"]
-    },
-    "Unordered list": {
-        "prefix": "unordered list",
-        "body": ["- ${1:first}", "- ${2:second}", "- ${3:third}", "$0"]
-    },
-    "Ordered list": {
-        "prefix": "ordered list",
-        "body": ["1. ${1:first}", "2. ${2:second}", "3. ${3:third}", "$0"]
-    },
-    "Horizontal rule": {
-        "prefix": "horizontal rule",
-        "body": "---\n"
-    },
-    "Task list": {
-        "prefix": "task",
-        "body": ["- [${1:x}] ${2:done}", "- [${3: }] ${4:not done}", "${0}"]
-    },
-    "Table": {
-        "prefix": "table",
-        "body": [
-            "| ${1:Column 1} | ${2:Column 2}  | ${3:Column 3} |",
-            "| :------- | :-------: | -------: |",
-            "| ${4:Item1}    | ${5:Item1}     | ${6:Item1}    |",
-            "${0}"
-        ]
-    },
-    "Subscript": {
-        "prefix": "sub",
-        "body": ["${1}<sub>${0}"]
-    },
-    "Superscript": {
-        "prefix": "sup",
-        "body": ["${1}<sup>${0}"]
-    }
+  "Link": {
+    "prefix": "link",
+    "body": [
+      "[${1:text}](${2:url}) ${0}"
+    ]
+  },
+  "URL": {
+    "prefix": "url",
+    "body": [
+      "<${1}> ${0}"
+    ]
+  },
+  "Image": {
+    "prefix": "img",
+    "body": [
+      "![${1:alt text}](${2:path}) ${0}"
+    ]
+  },
+  "Strikethrough text": {
+    "prefix": "strikethrough",
+    "body": "~~${1}~~ ${0}"
+  },
+  "Bold text": {
+    "prefix": "bold",
+    "body": "**${1}** $0"
+  },
+  "Italic text": {
+    "prefix": "italic",
+    "body": "*${1}* $0"
+  },
+  "Quoted text": {
+    "prefix": "quote",
+    "body": "> ${1}"
+  },
+  "Code": {
+    "prefix": "code",
+    "body": "`${1}` $0"
+  },
+  "Code block": {
+    "prefix": "codeblock",
+    "body": [
+      "```${1:language}",
+      "$0",
+      "```"
+    ]
+  },
+  "Unordered list": {
+    "prefix": "unordered list",
+    "body": [
+      "- ${1:first}",
+      "- ${2:second}",
+      "- ${3:third}",
+      "$0"
+    ]
+  },
+  "Ordered list": {
+    "prefix": "ordered list",
+    "body": [
+      "1. ${1:first}",
+      "2. ${2:second}",
+      "3. ${3:third}",
+      "$0"
+    ]
+  },
+  "Horizontal rule": {
+    "prefix": "horizontal rule",
+    "body": "---\n"
+  },
+  "Task list": {
+    "prefix": "task",
+    "body": [
+      "- [${1:x}] ${2:done}",
+      "- [${3: }] ${4:not done}",
+      "${0}"
+    ]
+  },
+  "Table": {
+    "prefix": "table",
+    "body": [
+      "| ${1:Column 1} | ${2:Column 2}  | ${3:Column 3} |",
+      "| :------- | :-------: | -------: |",
+      "| ${4:Item1}    | ${5:Item1}     | ${6:Item1}    |",
+      "${0}"
+    ]
+  },
+  "Subscript": {
+    "prefix": "sub",
+    "body": [
+      "${1}<sub>${0}"
+    ]
+  },
+  "Superscript": {
+    "prefix": "sup",
+    "body": [
+      "${1}<sup>${0}"
+    ]
+  },
+  "Math": {
+    "prefix": "math",
+    "body": [
+      "\\$\\$",
+      "${1}",
+      "\\$\\$"
+    ]
+  },
+  "Gather": {
+    "prefix": "math+gathered",
+    "body": [
+      "\\$\\$ \\begin{gathered}",
+      "${1}",
+      "\\end{gathered} \\$\\$"
+    ]
+  },
+  "Align": {
+    "prefix": "math+aligned",
+    "body": [
+      "\\$\\$ \\begin{aligned}",
+      "${1}",
+      "\\end{aligned} \\$\\$"
+    ]
+  }
 }
