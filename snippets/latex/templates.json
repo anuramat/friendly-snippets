@@ -1,0 +1,13 @@
+{
+  "Default template": {
+    "prefix": "main",
+    "body": [
+      "\\input{\"\\$$XDG_CONFIG_HOME/latex/preamble.tex\"}",
+      "\\documentclass{article}",
+      "\\begin{document}",
+      "\\{$1}",
+      "\\end{document}"
+    ],
+    "description": "test"
+  }
+}
