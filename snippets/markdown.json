@@ -104,20 +104,24 @@
       "\\$\\$"
     ]
   },
-  "Gather": {
-    "prefix": "math+gathered",
+  "Gathered": {
+    "prefix": "gathered",
     "body": [
-      "\\$\\$ \\begin{gathered}",
+      "\\$\\$",
+      "\\begin{gathered}",
       "${1}",
-      "\\end{gathered} \\$\\$"
+      "\\end{gathered}",
+      "\\$\\$"
     ]
   },
-  "Align": {
-    "prefix": "math+aligned",
+  "Aligned": {
+    "prefix": "aligned",
     "body": [
-      "\\$\\$ \\begin{aligned}",
+      "\\$\\$",
+      "\\begin{aligned}",
       "${1}",
-      "\\end{aligned} \\$\\$"
+      "\\end{aligned}",
+      "\\$\\$"
     ]
   }
 }
